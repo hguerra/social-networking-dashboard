@@ -1,15 +1,15 @@
 import {NgModule} from '@angular/core';
 
 import {SharedImportsModule} from 'app/shared/shared-imports.module';
-import {HomeModule} from 'app/pages/home/home.module';
-import {PageRoutingModule} from 'app/pages/page-routing.module';
+import {PagesLazyRoutingModule} from 'app/pages/pages-lazy-routing.module';
+import {PagesEagerRoutingModule} from 'app/pages/pages-eager-routing.module';
 
 @NgModule({
   declarations: [],
   imports: [
     SharedImportsModule,
-    PageRoutingModule,
-    HomeModule
+    PagesEagerRoutingModule,
+    PagesLazyRoutingModule
   ]
 })
 export class PagesModule {
